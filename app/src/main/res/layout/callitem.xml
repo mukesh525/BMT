@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="8dp"
+    card_view:cardBackgroundColor="#EEEEEE"
+    card_view:cardCornerRadius="4dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/call_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/fCallerNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/call_img"
+                    android:text="Name"
+                    android:textColor="?attr/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fCallFromTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="12345"
+                    android:textColor="?attr/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fTimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/fCallerNameTextView"
+                    android:layout_marginTop="2dp"
+                    android:text="Time"
+                    android:textColor="?attr/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/ivplay"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_play" />
+
+                <TextView
+                    android:id="@+id/fDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/fCallFromTextView"
+                    android:layout_marginTop="2dp"
+                    android:text="Date"
+                    android:textColor="?attr/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivplay"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/fGroupNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/fGroupNameTextView"
+                        android:layout_below="@+id/fTimeTextView"
+                        android:layout_marginTop="6dp"
+                        android:padding="2dp"
+                        android:text="Employee"
+                        android:textColor="@color/background_floating_material_dark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fGroupNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fTimeTextView"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@+id/fGroupNameLabel"
+                        android:layout_toRightOf="@+id/fGroupNameLabel"
+                        android:paddingTop="8dp"
+                        android:text="Employee"
+                        android:textColor="?attr/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fDateTextView"
+                        android:layout_toRightOf="@+id/fGroupNameTextView"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/review"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/rate"
+                            android:layout_marginTop="12dp"
+                            android:layout_toEndOf="@+id/rate"
+                            android:layout_toRightOf="@+id/rate"
+                            android:text="2"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/red"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/home"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/ic_home"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/rate"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignLeft="@+id/fCallFromTextView"
+                            android:layout_alignStart="@+id/fCallFromTextView"
+                            android:layout_below="@+id/fDateTextView"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/ic_rate" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/overflowmenu"
+                android:layout_width="35.0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ic_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ic_overflow" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <!--<TextView-->
+            <!--android:id="@+id/fGroupNameLabel"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="1dp"-->
+            <!--android:text="Employee"-->
+            <!--android:textColor="@color/background_floating_material_dark"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/fGroupNameTextView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="Employee"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="?attr/colorPrimary"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/rate"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_gravity="left"-->
+                <!--android:layout_marginBottom="2dp"-->
+                <!--android:layout_marginRight="2dp"-->
+                <!--android:background="@drawable/ic_rate" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/review"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignTop="@+id/fStatusTextView"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:padding="2dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/home"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="4dp"-->
+                <!--android:background="@drawable/ic_home"-->
+                <!--android:visibility="gone" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

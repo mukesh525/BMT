@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/item"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/call_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_call_incoming"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fCallerNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/call_img"
+                    android:text="Name"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ivplay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="6dp"
+                android:src="@drawable/ic_play" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="33dp"
+           >
+
+            <TextView
+                android:id="@+id/fCallFromTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="12345678900"
+                android:layout_marginTop="05dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="top"
+                />
+
+            <ImageView
+                android:id="@+id/call_status"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="7dp"
+                android:layout_gravity="center_horizontal|end"
+                android:src="@drawable/callreceived"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="27dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/fDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.02" />
+
+                <TextView
+                    android:id="@+id/fTimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Time"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="2"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/rate"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_rate" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/fGroupNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/fGroupNameTextView"
+                    android:layout_below="@+id/fTimeTextView"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/userwhite"
+                    android:text="Employee"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fGroupNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/fTimeTextView"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toEndOf="@+id/fGroupNameLabel"
+                    android:layout_toRightOf="@+id/fGroupNameLabel"
+                    android:paddingTop="6dp"
+                    android:text="Employee"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <com.nightonke.boommenu.BoomMenuButton
+                android:id="@+id/bmb3"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                app:bmb_buttonEnum="simpleCircle"
+                app:bmb_buttonPlaceEnum="buttonPlace_sc_6_1"
+                app:bmb_inList="true"
+                app:bmb_piecePlaceEnum="piecePlace_share"
+                app:bmb_shareLine1Color="@android:color/holo_blue_light"
+                app:bmb_shareLine2Color="@android:color/holo_orange_light" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

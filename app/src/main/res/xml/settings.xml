@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/display">
+        <vmc.in.mrecorder.util.ThemePreference
+            android:key="@string/pref_theme"
+            android:layout="@layout/theme_pref"
+            android:summary="@string/pref_theme_summary"
+            android:title="@string/pref_theme_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/audiosource">
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/audiosource"
+            android:entryValues="@array/audiosourceValues"
+            android:key="audiosource"
+            android:summary="@string/pref_audiosource_summary"
+            android:title="@string/audiosourcetitle" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/audioformat"
+            android:entryValues="@array/audiovalues"
+            android:key="audioformat"
+            android:summary="@string/pref_audioformat_summary"
+            android:title="@string/audioformattitle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/syncfrequency">
+        <ListPreference
+            android:defaultValue="10"
+            android:entries="@array/syncFrequency"
+            android:entryValues="@array/syncFrequencyValues"
+            android:key="prefSyncFrequency"
+            android:summary="@string/pref_sync_frequency"
+            android:title="@string/pref_sync_title_frequency"/>
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/WhenToDownload"
+            android:entryValues="@array/WhenToDownloadValues"
+            android:key="prefSyncNetwork"
+            android:summary="@string/pref_sync_Network"
+            android:title="@string/pref_sync_Network" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/recorsettings">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="prefRecording"
+            android:summary="@string/pref_record_settings"
+            android:title="@string/pref_title_record" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefMcubeRecording"
+            android:summary="@string/pref_mcube__record_settings"
+            android:title="@string/pref_mcube_title_record" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefOfficeTimeRecording"
+            android:summary="@string/pref_update_call"
+            android:title="@string/pref_title_updateCall" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="SMS_Category"
+        android:title="SMS (Max 140 chars only)">
+        <!--<SwitchPreference-->
+        <!--android:defaultValue="false"-->
+        <!--android:key="prefSMS"-->
+        <!--android:summary="Send SMS(By Default)"-->
+        <!--android:title="SMS" />-->
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefAskSMSBefore"
+            android:summary="Ask before sending"
+            android:title="SMS" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="InSMS_Category"
+        android:title="Incoming SMS ">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefIncomingSMS"
+            android:summary="Send Incoming SMS" />
+        <EditTextPreference
+            android:defaultValue="Incoming call text here"
+            android:enabled="false"
+            android:key="prefIncomingSMSContent"
+            android:maxLength="140"
+            android:summary="Incoming call text here"
+            android:title="Incoming Template" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="OutSMS_Category"
+        android:title="Outgoing SMS">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefOutgoingSMS"
+            android:summary="Send Outgoing SMS" />
+        <EditTextPreference
+            android:defaultValue="Outgoing call text here"
+            android:enabled="false"
+            android:key="prefOutgoingSMSContent"
+            android:maxLength="140"
+            android:summary="Outgoing call text here"
+            android:title="Outgoing Template" />
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory
+        android:key="MissedSMS_Category"
+        android:title="Missed SMS">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefMissedSMS"
+            android:summary="Send Missed SMS" />
+        <EditTextPreference
+            android:defaultValue="Missed call text here"
+            android:enabled="false"
+            android:key="prefMissedSMSContent"
+            android:maxLength="140"
+            android:summary="Missed call text here"
+            android:title="Missed Template" />
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory android:title="@string/notification">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefNotify"
+            android:summary="@string/notify_report_summary"
+            android:title="@string/notify"></SwitchPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/storage">
+        <com.ls.directoryselector.DirectoryPreference
+            android:key="store_path"
+            android:negativeButtonText="@android:string/cancel"
+            android:positiveButtonText="@android:string/ok"
+            android:summary="Path"
+            android:title="@string/dir_location" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Debug">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefDebug"
+            android:summary="For Developer's Testing"
+            android:title="Debug"></SwitchPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

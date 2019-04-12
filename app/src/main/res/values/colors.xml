@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="primary">#3F51B5</color>-->
+
+    <!--<color name="primary_dark">#303F9F</color>-->
+    <!--<color name="primary_light">#C5CAE9</color>-->
+    <!--<color name="accent">#009688</color>-->
+    <!--<color name="primary_text">#212121</color>-->
+    <!--<color name="secondary_text">#727272</color>-->
+    <!--<color name="icons">#000</color>-->
+    <!--<color name="divider">#B6B6B6</color>-->
+    <!--<color name="pager1">#F64C73</color>-->
+    <!--<color name="pager2">#3eb3a3</color>-->
+    <!--<color name="pager3">#3f76d4</color>-->
+
+    <color name="pager1">#fef7754c</color>
+    <color name="pager2">#ec6f48</color>
+    <color name="pager3">#dc6744</color>
+
+    <color name="primary">#FF5722</color>
+    <color name="primary_dark">#E64A19</color>
+    <color name="accent">#03A9F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="spinner">#EEEEEE</color>
+
+
+    <color name="refresh_progress_1">#F44336</color>
+    <color name="refresh_progress_2">#42A5F5</color>
+    <color name="refresh_progress_3">#CDDC39</color>
+
+
+    <color name="black">#000000</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="accent_dark">#ff2929</color>
+    <color name="white_overlay">#F3F3F3</color>
+
+
+    <!--Theme attribute-->
+    <!--deeporagne attribute-->
+
+
+    <!--deeppurple attribute-->
+    <color name="deeppurple_primary">#673AB7</color>
+    <color name="deeppurple_primary_dark">#512DA8</color>
+    <color name="deeppurple_accent">#E040FB</color>
+    <color name="deeppurple_primary_text">#212121</color>
+
+
+    <!--green attribute-->
+    <color name="green_primary">#4CAF50</color>
+    <color name="green_primary_dark">#388E3C</color>
+    <color name="green_accent">#FF4081</color>
+
+
+    <!--indigo_attribute-->
+    <color name="indigo_primary">#3F51B5</color>
+    <color name="indigo_primary_dark">#303F9F</color>
+    <color name="indigo_accent">#9E9E9E</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#20d920</color>
+    <color name="blackk">#000</color>
+
+    <!-- Color Palette -->
+    <color name="starNormalColor">#c4c4c4</color>
+    <color name="starSelectedColor">#ffdc01</color>
+    <color name="colorMardiGras">#2D2C2D</color>
+    <color name="colorMediumPurple">#8C53E5</color>
+    <color name="colorPurpleHeart">#5E2EAA</color>
+    <color name="colorAmethyst">#824ED1</color>
+    <color name="colorCranberry">#DD467C</color>
+
+    <!--lightblue_ attribute-->
+
+
+    <!--oragne_attribute-->
+
+
+    <!--pinkdeep_attribute-->
+
+
+    <!--purple_ attribute-->
+
+
+    <!--red_ attribute-->
+
+    <!--tealgray_ attribute-->
+
+
+    <!-- CYAN --><!-- dark -->
+    <!-- light -->
+    <!-- dark -->
+    <!-- light -->
+    <!-- TEAL --><!-- dark -->
+    <!-- light -->
+    <!-- dark -->
+    <!-- light -->
+
+
+</resources>

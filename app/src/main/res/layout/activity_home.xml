@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backporttr"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordi_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                </android.support.v7.widget.Toolbar>
+
+                <!--<com.kekstudio.dachshundtablayout.DachshundTabLayout-->
+                <!--android:id="@+id/tab_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:tabGravity="fill"/>-->
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabGravity="fill"
+                    app:tabMaxWidth="0dp"
+                    app:tabMode="fixed"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                    app:tabTextColor="@color/white" />
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_overlay">
+                <!--  floating action menu with buttons -->
+                <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.getbase.floatingactionbutton.FloatingActionsMenu
+                        android:id="@+id/fab_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        app:layout_anchorGravity="bottom|end"
+                        app:layout_behavior="vmc.in.mrecorder.activity.FloatingActionButtonBehavior"
+                        fab:fab_addButtonColorNormal="?attr/colorAccent"
+                        fab:fab_addButtonColorPressed="@color/accent_dark"
+                        fab:fab_addButtonPlusIconColor="@color/white"
+                        fab:fab_addButtonStrokeVisible="false"
+                        fab:fab_labelStyle="@style/menu_labels_style"
+                        fab:fab_labelsPosition="left">
+
+                        <com.getbase.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab_sync"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fab:fab_colorNormal="?attr/colorAccent"
+                            fab:fab_colorPressed="@color/accent_dark"
+                            fab:fab_icon="@drawable/ic_sync"
+                            fab:fab_plusIconColor="@color/white"
+                            fab:fab_size="mini"
+                            fab:fab_title="Sync Now" />
+
+                        <com.getbase.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fab:fab_colorNormal="?attr/colorAccent"
+                            fab:fab_colorPressed="@color/accent_dark"
+                            fab:fab_icon="@drawable/ic_settings"
+                            fab:fab_plusIconColor="@color/white"
+                            fab:fab_size="mini"
+                            fab:fab_title="Settings" />
+                    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+                </android.support.design.widget.CoordinatorLayout>
+            </FrameLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_home"
+        app:itemTextColor="@color/secondary_text"
+        app:menu="@menu/activity_home_drawer"
+        app:theme="@style/navigationviewstyle" />
+
+
+</android.support.v4.widget.DrawerLayout>

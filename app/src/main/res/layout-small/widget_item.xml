@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="12"
+    android:id="@+id/wroot">
+
+
+    <ImageView
+        android:id="@+id/call_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"/>
+
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/wuser"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_weight="3.37">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Hello"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/numberDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="9886282641,Dec 10, 2:05 PM"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/play"
+        android:layout_weight="2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/wic_play"
+        android:layout_alignParentLeft="true" />
+</LinearLayout>

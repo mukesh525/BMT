@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">MTracker</string>
+
+    <string name="action_settings">Logout</string>
+    <string name="drawer_open">OPEN</string>
+    <string name="drawer_close">CLOSE</string>
+    <string name="google_app_id">596968407103</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_activity_home">MTracker</string>
+
+
+    <string name="hint_email">Email</string>
+    <string name="pref_sync_Network">When to upload records</string>
+    <string name="hint_password">Password</string>
+    <string name="text_tryAgain">Try again</string>
+    <string name="login">Login</string>
+    <string name="title_activity_feedback"> Help Feedback</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="audiosource">Audio </string>
+    <string name="syncfrequency">Sync Frequency</string>
+    <string name="pref_audiosource_summary">Select audio source to record audio.</string>
+    <string name="pref_audioformat_summary">Select audio format.</string>
+    <string name="pref_sync_frequency">Select frequency to upload recordings.</string>
+    <string name="pref_sync_title_frequency">Frequency</string>
+    <string name="audiosourcetitle">Source</string>
+    <string name="audioformattitle">Format</string>
+    <string name="notification">Notification</string>
+    <string name="notify">Notify</string>
+    <string name="notify_report_summary">Notify while recording</string>
+    <string name="recorsettings">Record Settings (By Admin)</string>
+    <string name="pref_record_settings">Record all calls </string>
+    <string name="pref_title_record">Recording</string>
+    <string name="pref_update_call">Record office  hour calls</string>
+    <string name="pref_title_updateCall">Office Calls</string>
+    <string name="display">Display</string>
+    <string name="pref_theme_title">Theme</string>
+    <string name="pref_theme">preftheme</string>
+    <string name="pref_theme_summary">Set app theme</string>
+    <string name="no_playstore" />
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+
+
+    <string name="dir_location">Storage Location</string>
+    <string name="storage">Storage</string>
+    <string name="pref_mcube__record_settings">Record mcube calls </string>
+    <string name="pref_mcube_title_record">Mcube Calls</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="share">Share</string>
+    <string name="rate">Reviews and Ratings</string>
+    <string name="location">Call Location</string>
+    <string name="refresh">Refresh</string>
+
+    <style name="text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="header_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Radiostyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#90FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>
